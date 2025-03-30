@@ -1,0 +1,29 @@
+{
+  "name": "ice-tracker",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@arcgis/core": "^4.32.0",
+    "axios": "^1.7.9",
+    "dotenv": "^16.4.7",
+    "esri-loader": "^3.7.0",
+    "mongodb": "^6.13.1",
+    "next": "^15.1.7",
+    "papaparse": "^5.5.2",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "eslint": "^9",
+    "eslint-config-next": "15.1.7",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1"
+  }
+}
