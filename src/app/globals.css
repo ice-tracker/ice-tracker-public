@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: 'Montserrat', sans-serif; /* Changed to Montserrat */
+  color: #333; /* Dark text color for better readability */
+  line-height: 1.6; /* Improve line spacing */
+}
+
+.callText {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #000000; /* Or whatever text color you're using */
+}
