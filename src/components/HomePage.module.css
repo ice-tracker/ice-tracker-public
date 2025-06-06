@@ -1,0 +1,59 @@
+.popupBox {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.18);
+  padding: 2rem 2rem 2rem 2rem;
+  width: 50vw;
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: auto;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #2f549d;
+  margin-top: 0.7rem;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 16px;
+  text-align: center;
+  color: #00275e;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.phoneNumber {
+  font-size: 16px;
+  text-align: center;
+  color: #00275e;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.description {
+  font-size: 16px;
+  margin-top: 1.6rem;
+  text-align: left;
+  color: #00275e;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.continueButton {
+  background: #2f549d;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 28px;
+  font-weight: 600;
+  font-size: 1.1em;
+  cursor: pointer;
+  margin-top: auto;
+  margin-bottom: 1rem;
+}

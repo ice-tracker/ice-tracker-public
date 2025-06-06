@@ -1,0 +1,25 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Report {
+  id                 Int     @id @default(autoincrement())
+  Date               String
+  Latitude           Float
+  Longitude          Float
+  Time               String?
+  Location           String
+  Activity           String
+  Sec                Boolean @default(false)
+  Description        String?
+  Agents             Int?
+  Cars               Int?
+  Tactic             String?
+  Address            String?
+  RelativePopulation Int?    @default(0)
+}
