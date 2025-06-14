@@ -1,0 +1,155 @@
+.panelBase {
+  position: fixed;
+  left: 0;
+  height: 90vh;
+  width: 27vw;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  display: flex;
+  color: white;
+  pointer-events: auto;
+  transition: width 0.3s;
+}
+
+.panelLoading,
+.panelNoEvent {
+  justify-content: center;
+  align-items: center;
+  background-color: #2f549d;
+  padding: 15px;
+  font-size: 1.2em;
+}
+
+.panelEvent {
+  background-color: #f7f7f7;
+  padding: 24px 20px;
+  color: white;
+  font-size: 1.1em;
+  flex-direction: column;
+  gap: 18px;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.exitButton {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  background: transparent;
+  border: none;
+  color: #00275e;
+  font-size: 3em;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1em;
+  margin-bottom: 0.2em;
+}
+
+.headerTitle {
+  font-weight: bold;
+  font-size: 2em;
+  color: #2f549d;
+}
+
+.headerDate {
+  font-weight: bold;
+  font-size: 1em;
+  color: #2f549d;
+}
+
+.header2 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1em;
+  margin-bottom: 0.2em;
+}
+
+.headerLocation {
+  font-weight: bold;
+  font-size: 1em;
+  color: #00275e;
+}
+
+.headerAddress {
+  font-weight: bold;
+  font-size: 1em;
+  color: #00275e;
+}
+
+.body {
+  color: #00275e;
+  font-size: 1em;
+  margin-top: 10px;
+}
+
+.bodyDescription {
+  margin-top: 4px;
+  white-space: pre-line;
+  max-height: 25rem;
+  overflow-y: auto;
+}
+
+@media (max-width: 768px) {
+  .panelBase {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: auto;
+    width: 100vw;
+    min-height: 200px;
+    max-height: 90vh;
+    height: auto;
+    border-radius: 18px 18px 0 0;
+    box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.18);
+    padding: 18px 10px 10px 10px;
+    z-index: 2200;
+    flex-direction: column;
+    gap: 10px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    transition: bottom 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .panelLoading,
+  .panelNoEvent {
+    font-size: 1.1em;
+    padding: 12px;
+  }
+  .panelEvent {
+    font-size: 1em;
+    padding: 18px 10px 10px 10px;
+    gap: 12px;
+  }
+  .exitButton {
+    top: 8px;
+    right: 12px;
+    font-size: 2em;
+  }
+  .headerTitle {
+    font-size: 1.3em;
+    text-align: center;
+  }
+  .headerDate {
+    font-size: 1em;
+    text-align: center;
+  }
+  .header2 {
+    gap: 0.1em;
+  }
+  .headerLocation,
+  .headerAddress {
+    font-size: 1em;
+    text-align: center;
+  }
+  .body {
+    font-size: 0.98em;
+    margin-top: 8px;
+  }
+}

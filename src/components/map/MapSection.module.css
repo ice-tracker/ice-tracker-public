@@ -1,0 +1,117 @@
+/* MapSection.module.css */
+
+.mapSectionRoot {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.sidebar {
+  position: fixed;
+  display: flex;
+  left: 0px; /* default, will be overridden inline for open/close */
+  height: 90vh;
+  transition: left 0.3s ease-in-out;
+  z-index: 100;
+  background-color: white;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.sidebarClosed {
+  left: -30vw;
+}
+
+.sidebarOpen {
+  left: 0px;
+}
+
+.sidebarInner {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.collapseButton {
+  position: absolute;
+  right: -30px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  padding: 10px 15px;
+  cursor: pointer;
+  z-index: 101;
+}
+
+.desktopOnly {
+  display: inline;
+}
+
+.mobileOnly {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100vw;
+    left: 0;
+    top: auto;
+    bottom: 0;
+    height: 60vh;
+    min-height: 200px;
+    max-height: 90vh;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.18);
+    z-index: 3000;
+    background: white;
+    flex-direction: column;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+      left 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateY(0);
+    right: 0;
+  }
+  .sidebarClosed {
+    transform: translateY(100%);
+    left: 0;
+  }
+  .sidebarOpen {
+    transform: translateY(0);
+    left: 0;
+  }
+  .collapseButton {
+    right: 50%;
+    left: 50%;
+    top: 8px;
+    transform: translate(-50%, 0);
+    border-radius: 8px;
+    background: #e0e7ef;
+    color: #2f549d;
+    z-index: 3100;
+    padding: 6px 18px;
+    font-size: 1.2em;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  }
+  .sidebarInner {
+    flex-direction: column;
+    height: 100%;
+    width: 100vw;
+  }
+  .desktopOnly {
+    display: none;
+  }
+  .mobileOnly {
+    display: inline;
+  }
+}
+
+@media (min-width: 769px) {
+  .mobileCloseButton {
+    display: none;
+  }
+}
