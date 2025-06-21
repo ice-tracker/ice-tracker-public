@@ -1,0 +1,172 @@
+/* EventList.module.css */
+
+.eventListLoading {
+  background-color: #2f549d;
+  padding: 15px;
+  /* borderTopRightRadius: 12px; */
+  /* borderBottomRightRadius: 12px; */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  width: 17vw;
+  color: white;
+  font-size: 1.2em;
+}
+
+.eventListContainer {
+  background-color: #2f549d;
+  padding: 15px;
+  padding-right: 7.5px;
+  /* borderTopRightRadius: 12px; */
+  /* borderBottomRightRadius: 12px; */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 90vh;
+  width: 20vw;
+  /* Remove overflow-y here, move to scroll body */
+}
+
+.eventListScrollBody {
+  flex: 1 1 auto;
+  overflow-y: auto;
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none;
+  scrollbar-width: thin;
+  scrollbar-color: #fff #2f549d; /* thumb color, track color */
+  /* Ensure no extra padding/margin that would affect width */
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2vh;
+  padding-right: 0.5vw;
+}
+
+/* Custom white scrollbar for Chrome, Safari, Edge */
+/* from https://stackoverflow.com/questions/68111024/how-to-hide-scroll-bar-in-react-app-with-allowing-scrolling */
+
+.eventListScrollBody::-webkit-scrollbar {
+  width: 10px;
+  background: #2f549d;
+}
+.eventListScrollBody::-webkit-scrollbar-thumb {
+  background: #fff;
+  border-radius: 8px;
+}
+.eventListScrollBody::-webkit-scrollbar-track {
+  background: #2f549d;
+  border-radius: 8px;
+}
+
+.eventListTitle {
+  font-size: 2em;
+  color: white;
+  margin: 5px;
+  position: sticky;
+  top: 0;
+  background: #2f549d;
+  z-index: 10;
+}
+
+.eventListNoEvents {
+  color: #ccc;
+  text-align: center;
+}
+
+.eventListButton {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: #f7f9fc;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 12px;
+  cursor: pointer;
+  /* Remove margin-bottom to avoid double spacing with gap */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.eventListButton:hover {
+  background: #dadbde;
+  transition: 0.4s;
+}
+
+.eventListActivity {
+  font-weight: bold;
+  color: #2f549d;
+  margin-bottom: 0px;
+  font-size: 1.4em;
+}
+
+.eventListDate {
+  font-weight: bold;
+  color: #00275e;
+  margin-bottom: 4px;
+}
+
+.eventListDetails {
+  color: #00275e;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .eventListContainer {
+    background-color: #2f549d;
+    padding: 10px 6px 10px 6px;
+    box-shadow: none;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    height: 100%;
+    min-height: 0;
+    width: 100vw;
+    /* Remove overflow-y here, move to scroll body */
+    position: relative;
+    flex-grow: 1;
+    border-radius: 0;
+    margin-top: 0;
+  }
+  .eventListScrollBody {
+    flex: 1 1 auto;
+    overflow-y: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: thin;
+    scrollbar-color: #fff #2f549d;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .eventListScrollBody::-webkit-scrollbar {
+    width: 10px;
+    background: #2f549d;
+  }
+  .eventListScrollBody::-webkit-scrollbar-thumb {
+    background: #fff;
+    border-radius: 8px;
+  }
+  .eventListScrollBody::-webkit-scrollbar-track {
+    background: #2f549d;
+    border-radius: 8px;
+  }
+  .eventListTitle {
+    font-size: 1.1em;
+    color: white;
+    margin: 4px 0 4px 0;
+    text-align: center;
+  }
+  .eventListButton {
+    width: 98vw;
+    font-size: 1em;
+    padding: 10px;
+    /* Remove margin-bottom to avoid double spacing with gap */
+    box-sizing: border-box;
+  }
+}

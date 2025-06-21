@@ -1,0 +1,262 @@
+.panelBase {
+  position: fixed;
+  left: 4rem;
+  top: 7rem;
+  height: 80vh;
+  width: 27vw;
+  min-width: 320px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  display: flex;
+  color: white;
+  pointer-events: auto;
+  transition: width 0.3s;
+}
+
+/* Custom white scrollbar for Chrome, Safari, Edge */
+.panelBase::-webkit-scrollbar {
+  width: 10px;
+  background: #2f549d;
+}
+.panelBase::-webkit-scrollbar-thumb {
+  background: #fff;
+  border-radius: 8px;
+}
+.panelBase::-webkit-scrollbar-track {
+  background: #2f549d;
+  border-radius: 8px;
+}
+
+.panelLoading,
+.panelNoEvent {
+  justify-content: center;
+  align-items: center;
+  background-color: #2f549d;
+  padding: 15px;
+  font-size: 1.2em;
+}
+
+.panelEvent {
+  background-color: #f7f7f7;
+  /* padding: 24px 20px; */
+  color: white;
+  font-size: 1.1em;
+  flex-direction: column;
+  gap: 18px;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.exitButton {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  height: 3.5rem;
+  width: 3.5rem;
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 3em;
+  cursor: pointer;
+  z-index: 1100;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.exitButton:hover {
+  background: transparent;
+}
+
+.header {
+  padding: 1rem 2rem;
+  display: flex;
+  top: 10rem;
+  left: 1rem;
+  flex-direction: column;
+  gap: 0.1em;
+  margin-bottom: 0.2em;
+  background-color: #2f459d;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.headerTitle {
+  font-weight: bold;
+  font-size: 2em;
+  color: #ffffff;
+}
+
+.headerDate {
+  font-weight: bold;
+  font-size: 1em;
+  color: #ffffff;
+}
+
+.header2 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1em;
+  margin-bottom: 0.2em;
+}
+
+.headerLocation {
+  font-weight: bold;
+  font-size: 1em;
+  color: #00275e;
+}
+
+.headerAddress {
+  font-weight: bold;
+  font-size: 1em;
+  color: #00275e;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  color: #00275e;
+  font-size: 1em;
+  margin: 0rem 1.5rem;
+  overflow-y: auto;
+
+  padding-bottom: 1rem;
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.bodyDescription {
+  margin-top: 4px;
+  white-space: pre-line;
+  max-height: 25rem;
+  overflow-y: auto;
+}
+
+.navigationBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  position: absolute;
+  bottom: 2rem;
+  left: 0;
+  width: 100%;
+  z-index: 1200;
+}
+
+.navButton {
+  background: #2f549d;
+  color: #fff;
+  border: none;
+  border-radius: 0; /* Square shape */
+  width: 3rem;
+  height: 3rem;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+  transition: background 0.2s, transform 0.1s;
+  padding: 0;
+}
+
+.navButton:hover {
+  background: #1d3870;
+  transform: scale(1.08);
+}
+
+.arrowIcon {
+  font-size: 2.2rem;
+  font-family: "Segoe UI Symbol", "Arial", sans-serif;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navDescription {
+  color: #00275e;
+  font-size: 1.1em;
+  font-weight: bold;
+  min-width: 5rem;
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+
+@media (max-width: 768px) {
+  .panelBase {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: auto;
+    width: 100vw;
+    min-height: 200px;
+    max-height: 90vh;
+    height: 40vh;
+    border-radius: 18px 18px 0 0;
+    box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.18);
+    padding: 18px 10px 10px 10px;
+    z-index: 3200;
+    flex-direction: column;
+    gap: 10px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    transition: bottom 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .panelLoading,
+  .panelNoEvent {
+    font-size: 1.1em;
+    padding: 12px;
+  }
+  .panelEvent {
+    font-size: 1em;
+    padding: 18px 10px 10px 10px;
+    gap: 12px;
+  }
+  .exitButton {
+    top: 8px;
+    right: 12px;
+    font-size: 2em;
+  }
+  .headerTitle {
+    font-size: 1.3em;
+    text-align: center;
+  }
+  .headerDate {
+    font-size: 1em;
+    text-align: center;
+  }
+  .header2 {
+    gap: 0.1em;
+  }
+  .headerLocation,
+  .headerAddress {
+    font-size: 1em;
+    text-align: center;
+  }
+  .body {
+    font-size: 0.98em;
+    margin-top: 8px;
+  }
+  .navigationBar {
+    bottom: 1rem;
+    gap: 1.2rem;
+  }
+  .navButton {
+    width: 2.2rem;
+    height: 2.2rem;
+    font-size: 1.4rem;
+  }
+  .arrowIcon {
+    font-size: 1.5rem;
+  }
+  .navDescription {
+    font-size: 1em;
+    min-width: 3.5rem;
+  }
+}
