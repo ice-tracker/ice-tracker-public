@@ -1,0 +1,259 @@
+/* EventList.module.css */
+
+.eventListLoading {
+  background-color: #2f549d;
+  padding: 15px;
+  /* borderTopRightRadius: 12px; */
+  /* borderBottomRightRadius: 12px; */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  width: 20vw;
+  color: #ccc;
+}
+
+.eventListContainer {
+  background-color: #2f549d;
+  padding: 15px;
+  padding-right: 7.5px;
+  /* borderTopRightRadius: 12px; */
+  /* borderBottomRightRadius: 12px; */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 90vh;
+  width: 20vw;
+  /* Remove overflow-y here, move to scroll body */
+}
+
+.eventListScrollBody {
+  flex: 1 1 auto;
+  overflow-y: auto;
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none;
+  scrollbar-width: thin;
+  scrollbar-color: #fff #2f549d; /* thumb color, track color */
+  /* Ensure no extra padding/margin that would affect width */
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2vh;
+  padding-right: 0.5vw;
+}
+
+/* Custom white scrollbar for Chrome, Safari, Edge */
+/* from https://stackoverflow.com/questions/68111024/how-to-hide-scroll-bar-in-react-app-with-allowing-scrolling */
+
+.eventListScrollBody::-webkit-scrollbar {
+  width: 10px;
+  background: #2f549d;
+}
+.eventListScrollBody::-webkit-scrollbar-thumb {
+  background: #fff;
+  border-radius: 8px;
+}
+.eventListScrollBody::-webkit-scrollbar-track {
+  background: #2f549d;
+  border-radius: 8px;
+}
+
+.eventListTitle {
+  font-size: 2em;
+  color: white;
+  margin: 5px;
+  position: sticky;
+  top: 0;
+  background: #2f549d;
+  z-index: 10;
+}
+
+.eventFoundCount {
+  font-size: 1em;
+  color: black;
+  background: #dfdede;
+  padding: 0.35rem;
+  font-style: italic;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  width: 94%;
+  border-radius: 5px;
+  margin-top: 0.5rem;
+  text-align: left;
+  padding-left: 1rem;
+  box-sizing: border-box;
+}
+
+.eventListNoEvents {
+  color: #ccc;
+  text-align: center;
+}
+
+.eventListButton {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: #f7f9fc;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 12px;
+  cursor: pointer;
+  /* Remove margin-bottom to avoid double spacing with gap */
+  width: 100%;
+  box-sizing: border-box;
+  line-height: 1.3;
+}
+
+.eventListButton:hover {
+  background: #dadbde;
+  transition: 0.4s;
+}
+
+.eventListActivity {
+  font-weight: bold;
+  color: #2f549d;
+  margin-top: 0.1em;
+  margin-bottom: 0.05em;
+  font-size: 1.4em;
+  text-align: left;
+  width: 100%;
+  overflow: hidden;
+}
+
+.eventListDate {
+  font-weight: bold;
+  color: #00275e;
+  margin-bottom: 0.4em;
+  text-align: left;
+}
+
+.eventListDetails {
+  color: #00275e;
+  text-align: left;
+  font-weight: bold;
+}
+.eventAddress {
+  color: #00275e;
+  text-align: left;
+}
+
+.eventCount {
+  color: #ffffff;
+  position: absolute;
+  top: 1rem;
+  right: 0.75rem;
+  text-align: center;
+  background-color: red;
+  width: 1.5rem;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .eventListContainer {
+    background-color: #2f549d;
+    padding: 10px 6px 10px 6px;
+    box-shadow: none;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    height: 100%;
+    min-height: 0;
+    width: 100vw;
+    /* Remove overflow-y here, move to scroll body */
+    position: relative;
+    flex-grow: 1;
+    border-radius: 0;
+    margin-top: 0;
+  }
+  .eventFoundCount {
+    align-self: center;
+    font-size: 0.9em;
+    color: black;
+    background: #dfdede;
+    padding: 0.35rem;
+    font-style: italic;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    width: 94%;
+    border-radius: 5px;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  .eventListScrollBody {
+    flex: 1 1 auto;
+    overflow-y: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: thin;
+    scrollbar-color: #fff #2f549d;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .eventListScrollBody::-webkit-scrollbar {
+    width: 10px;
+    background: #2f549d;
+  }
+  .eventListScrollBody::-webkit-scrollbar-thumb {
+    background: #fff;
+    border-radius: 8px;
+  }
+  .eventListScrollBody::-webkit-scrollbar-track {
+    background: #2f549d;
+    border-radius: 8px;
+  }
+  .eventListTitle {
+    font-size: 1.3em;
+    color: white;
+    padding-top: 0.25rem;
+    margin: 0px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .eventListButton {
+    width: 95%;
+    font-size: 1em;
+    padding: 5px 10px;
+    /* Remove margin-bottom to avoid double spacing with gap */
+    box-sizing: border-box;
+    align-self: center;
+    line-height: 1.1;
+  }
+  .eventListLoading {
+    width: 100%;
+  }
+  .eventListActivity {
+    margin-bottom: 0.5em;
+    font-size: 1.1em;
+  }
+  .eventBody {
+    display: flex;
+    justify-content: space-between; /* Push items to left and right */
+    flex-direction: row-reverse;
+    width: 100%;
+    overflow: hidden;
+    align-items: flex-start;
+    font-size: 0.9em;
+    margin-bottom: 0;
+  }
+  .eventListDate {
+    margin-bottom: 0.15em;
+  }
+  .eventCount {
+    top: 0.5rem;
+    right: 0.5rem;
+  }
+  .eventAddress {
+    line-height: 1.4;
+    margin-bottom: 0.1em;
+    font-size: 0.9em;
+  }
+}

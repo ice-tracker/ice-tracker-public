@@ -1,0 +1,157 @@
+/* MapSection.module.css */
+
+.mapSectionRoot {
+  display: flex;
+  width: 100%;
+  height: 90%;
+  max-height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.sidebar {
+  position: fixed;
+  display: flex;
+  left: 0px; /* default, will be overridden inline for open/close */
+  height: 100%;
+  transition: left 0.3s ease-in-out;
+  z-index: 2000;
+  background-color: white;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.sidebarClosed {
+  left: -35vw;
+}
+
+.sidebarOpen {
+  left: 0px;
+}
+
+.sidebarInner {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  z-index: 2000;
+}
+
+.collapseButton {
+  /* Remove absolute positioning for mobile, keep for desktop */
+  position: absolute;
+  right: -30px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #ffffff;
+  color: #2f549d;
+  stroke: 800;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  padding: 10px 12px;
+  cursor: pointer;
+  z-index: 101;
+  height: 10vh;
+  font-size: 15px;
+  font-weight: 700; /* Added weight */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18); /* Added shadow */
+}
+
+.collapseButton:hover {
+  background-color: #f2f4f8;
+}
+
+.desktopOnly {
+  display: inline;
+}
+
+.mobileOnly {
+  display: none;
+}
+
+.mapContainer {
+  width: 100%;
+  height: 100%;
+  background: #eaf2fb; /* fallback background color */
+  border-radius: 12px; /* optional, for rounded corners */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); /* optional, subtle shadow */
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .mapSectionRoot {
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    overscroll-behavior: none;
+  }
+
+  .sidebar {
+    width: 100vw;
+    left: 0;
+    top: auto;
+    bottom: 0;
+    height: 50vh;
+    min-height: 120px;
+    max-height: 60vh;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 3000;
+    background: rgb(37, 28, 28, 0);
+    flex-direction: column;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+      left 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateY(0);
+    right: 0;
+  }
+  .sidebarClosed {
+    transform: translateY(100%);
+    left: 0;
+  }
+  .sidebarOpen {
+    transform: translateY(0);
+    left: 0;
+  }
+  .collapseButton {
+    position: absolute;
+    top: -3vh;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30vw;
+    height: 4vh;
+    margin: 0;
+    border-radius: 8px;
+    background: #ffffff !important; /* Always white by default */
+    color: #2f549d;
+    z-index: 100;
+    padding-top: 0px;
+    font-size: 1em;
+    font-weight: 700; /* Added weight */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
+    display: block;
+  }
+  .sidebarInner {
+    flex-direction: column;
+    height: 100%;
+    width: 100vw;
+    position: relative; /* Make this relative for absolute children */
+  }
+  .desktopOnly {
+    display: none;
+  }
+  .mobileOnly {
+    display: inline;
+  }
+  .mapContainer {
+    height: 100%;
+    /* min-height: 200px; */
+    border-radius: 0;
+  }
+}
+
+@media (min-width: 769px) {
+  .mobileCloseButton {
+    display: none;
+  }
+}

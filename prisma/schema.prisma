@@ -1,0 +1,66 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Report {
+  id              Int     @id @default(autoincrement())
+  Date            String
+  Latitude        Float
+  Longitude       Float
+  Time            String?
+  Location        String
+  Activity        String
+  Sec             Boolean @default(false)
+  Description     String?
+  Cars            String?
+  Tactic          String?
+  Address         String?
+  RelReportID     Int?
+  Agents          String?
+  Radius          Float?  @default(0)
+  RandomLatitude  Float   @default(0)
+  RandomLongitude Float   @default(0)
+  TotalPopulation Int     @default(0)
+  NumAbducted     Int     @default(0)
+  OnlyStreet      Boolean @default(false)
+  StreetGeom      String?
+  City            String?
+}
+
+model Test_Report {
+  id              Int     @id @default(autoincrement())
+  Date            String
+  Latitude        Float
+  Longitude       Float
+  Time            String?
+  Location        String
+  Activity        String
+  Sec             Boolean @default(false)
+  Description     String?
+  Cars            String?
+  Tactic          String?
+  Address         String?
+  RelReportID     Int?
+  Agents          String?
+  Radius          Float?  @default(0)
+  RandomLatitude  Float   @default(0)
+  RandomLongitude Float   @default(0)
+  TotalPopulation Int     @default(0)
+  NumAbducted     Int     @default(0)
+  OnlyStreet      Boolean @default(false)
+  StreetGeom      String?
+  City            String?
+}
+
+model Place_Of_Interest {
+  id        Int    @id @default(autoincrement())
+  Name      String
+  Address   String
+  Latitude  Float
+  Longitude Float
+}

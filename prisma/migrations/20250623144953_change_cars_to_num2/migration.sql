@@ -1,0 +1,2 @@
+-- AlterTable
+ALTER TABLE "Test_Report" ALTER COLUMN "Cars" SET DATA TYPE TEXT;

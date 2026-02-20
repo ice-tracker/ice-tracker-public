@@ -1,0 +1,2 @@
+-- AlterTable
+ALTER TABLE "Report" ALTER COLUMN "City" DROP NOT NULL;
