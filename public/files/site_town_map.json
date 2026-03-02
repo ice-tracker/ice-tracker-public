@@ -1,0 +1,1697 @@
+[
+  {
+    "site_name": "287G OFFICER BARNSTABLE COUNTY",
+    "mapped_town": "BARNSTABLE",
+    "confidence": 0.8
+  },
+  {
+    "site_name": "62A DISTRICT COURT PROBATION, WYOMING, MI",
+    "mapped_town": null,
+    "confidence": 0.0
+  },
+  {
+    "site_name": "ABINGTON POLICE DEPARTMENT",
+    "mapped_town": "ABINGTON",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "AMESBURY DISTRICT COURT",
+    "mapped_town": "AMESBURY",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "ATD MA STATE",
+    "mapped_town": null,
+    "confidence": 0.0
+  },
+  {
+    "site_name": "ATTELBORO POLICE DEPT",
+    "mapped_town": "ATTLEBORO",
+    "confidence": 0.95
+  },
+  {
+    "site_name": "ATTLEBORO DISTRICT COURT",
+    "mapped_town": "ATTLEBORO",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "AYER DISTRICT COURT",
+    "mapped_town": "AYER",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "BARNSTABLE COUNTY HOC",
+    "mapped_town": "BOURNE",
+    "confidence": 0.9
+  },
+  {
+    "site_name": "BARNSTABLE COUNTY LOCAL POLICE DEPT",
+    "mapped_town": "BARNSTABLE",
+    "confidence": 0.8
+  },
+  {
+    "site_name": "BARNSTABLE DISTRICT COURT",
+    "mapped_town": "BARNSTABLE",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "BERKSHIRE COUNTY LOCAL POLICE DEPT",
+    "mapped_town": "PITTSFIELD",
+    "confidence": 0.5
+  },
+  {
+    "site_name": "BOI GENERAL AREA, NON-SPECIFIC",
+    "mapped_town": "BOSTON",
+    "confidence": 0.6
+  },
+  {
+    "site_name": "BOS GENERAL AREA, NON-SPECIFIC",
+    "mapped_town": "BOSTON",
+    "confidence": 0.6
+  },
+  {
+    "site_name": "BOSTON DISTRICT COURT DOWNTOWN BOSTON",
+    "mapped_town": "BOSTON",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "BOSTON DISTRICT COURT EAST BOSTON",
+    "mapped_town": "BOSTON",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "BOSTON DISTRICT COURT ROXBURY",
+    "mapped_town": "BOSTON",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "BOSTON ICE OFFICE - JFK FEDERAL BLDG, BOSTON",
+    "mapped_town": "BOSTON",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "BOSTON LOGAN AIRPORT",
+    "mapped_town": "BOSTON",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "BOSTON MUNICIPAL COURT",
+    "mapped_town": "BOSTON",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "BOSTON PD DORCHESTER, SOUTH BOSTON",
+    "mapped_town": "BOSTON",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "BOSTON PD DOWNTOWN,CHINA TOWN, CHARLESTOWN,E.BOS.",
+    "mapped_town": "BOSTON",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "BOSTON PD N.DORCHESTER,MATTAPAN,ROXBURY, MISSION HILL",
+    "mapped_town": "BOSTON",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "BOSTON POLICE SECURE COMMUNITIES",
+    "mapped_town": "BOSTON",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "BOSTON SUPERIOR COURT DOWNTOWN",
+    "mapped_town": "BOSTON",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "BRAINTREE POLICE DEPARTMENT",
+    "mapped_town": "BRAINTREE",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "BRIGHTON POLICE DEPT",
+    "mapped_town": "BOSTON",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "BRISTOL COUNTY HOC",
+    "mapped_town": "DARTMOUTH",
+    "confidence": 0.9
+  },
+  {
+    "site_name": "BROCKTON DISTRICT COURT",
+    "mapped_town": "BROCKTON",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "BROCKTON POLICE DEPT",
+    "mapped_town": "BROCKTON",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "BROOKLINE DISTRICT COURT",
+    "mapped_town": "BROOKLINE",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "BROOKLINE POLICE DEPT",
+    "mapped_town": "BROOKLINE",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "BUFFALO FEDERAL DETENTION FACILITY",
+    "mapped_town": null,
+    "confidence": 0.0
+  },
+  {
+    "site_name": "CAMBRIDGE DISTRICT COURT",
+    "mapped_town": "CAMBRIDGE",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "CARVER COUNTY JAIL, MN",
+    "mapped_town": null,
+    "confidence": 0.0
+  },
+  {
+    "site_name": "CASS COUNTY SHERIFFS OFFICE MISSOURI",
+    "mapped_town": null,
+    "confidence": 0.0
+  },
+  {
+    "site_name": "CHARLESTOWN DISTRICT COURT",
+    "mapped_town": "BOSTON",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "CHELSEA DISTRICT COURT",
+    "mapped_town": "CHELSEA",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "CHELSEA POLICE DEPT",
+    "mapped_town": "CHELSEA",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "CLINTON POLICE DEPT",
+    "mapped_town": "CLINTON",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "DALLAS COUNTY GENERAL AREA",
+    "mapped_town": null,
+    "confidence": 0.0
+  },
+  {
+    "site_name": "DEARBORN, MI",
+    "mapped_town": null,
+    "confidence": 0.0
+  },
+  {
+    "site_name": "DEDHAM DISTRICT COURT",
+    "mapped_town": "DEDHAM",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "DENVER COUNTY",
+    "mapped_town": null,
+    "confidence": 0.0
+  },
+  {
+    "site_name": "DO NOT USE",
+    "mapped_town": null,
+    "confidence": 0.0
+  },
+  {
+    "site_name": "DORCHESTER DISTRICT COURT",
+    "mapped_town": "BOSTON",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "DUDLEY DISTRICT COURT",
+    "mapped_town": "DUDLEY",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "EAST BOSTON DISTRICT COURT",
+    "mapped_town": "BOSTON",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "EPC GENERAL AREA, NON-SPECIFIC",
+    "mapped_town": null,
+    "confidence": 0.0
+  },
+  {
+    "site_name": "ESSEX COUNTY HOC",
+    "mapped_town": "MIDDLETON",
+    "confidence": 0.9
+  },
+  {
+    "site_name": "FALL RIVER DISTRICT COURT",
+    "mapped_town": "FALL RIVER",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "FALL RIVER POLICE DEPT",
+    "mapped_town": "FALL RIVER",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "FALMOUTH DISTRICT COURT",
+    "mapped_town": "FALMOUTH",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "FEDERAL MEDICAL CENTER-DEVENS",
+    "mapped_town": "AYER",
+    "confidence": 0.9
+  },
+  {
+    "site_name": "FITCHBURG DISTRICT COURT",
+    "mapped_town": "FITCHBURG",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "FOS GENERAL AREA, NON-SPECIFIC",
+    "mapped_town": null,
+    "confidence": 0.0
+  },
+  {
+    "site_name": "FRAMIGNHAM POLICE DEPT",
+    "mapped_town": "FRAMINGHAM",
+    "confidence": 0.95
+  },
+  {
+    "site_name": "FRAMINGHAM DISTRICT COURT",
+    "mapped_town": "FRAMINGHAM",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "FUG OPS CT",
+    "mapped_town": null,
+    "confidence": 0.0
+  },
+  {
+    "site_name": "FUGITIVE OPERATIONS CT",
+    "mapped_town": null,
+    "confidence": 0.0
+  },
+  {
+    "site_name": "FUGITIVE OPERATIONS MA",
+    "mapped_town": null,
+    "confidence": 0.0
+  },
+  {
+    "site_name": "FUGITIVE OPERATIONS ME",
+    "mapped_town": null,
+    "confidence": 0.0
+  },
+  {
+    "site_name": "GLOUCESTER DISTRICT COURT",
+    "mapped_town": "GLOUCESTER",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "HAMPDEN COUNTY HOC",
+    "mapped_town": "LUDLOW",
+    "confidence": 0.9
+  },
+  {
+    "site_name": "HAR GENERAL AREA, NON-SPECIFIC",
+    "mapped_town": "HARTFORD",
+    "confidence": 0.0
+  },
+  {
+    "site_name": "HARTFORD, CT",
+    "mapped_town": null,
+    "confidence": 0.0
+  },
+  {
+    "site_name": "HAVERHILL DISTRICT COURT",
+    "mapped_town": "HAVERHILL",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "HAVERHILL POLICE DEPT",
+    "mapped_town": "HAVERHILL",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "HILLSBOROUGH COUNTY NH",
+    "mapped_town": null,
+    "confidence": 0.0
+  },
+  {
+    "site_name": "HINGHAM POLICE DEPT",
+    "mapped_town": "HINGHAM",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "HOLYOKE DISTRICT COURT",
+    "mapped_town": "HOLYOKE",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "LAWRENCE DISTRICT COURT",
+    "mapped_town": "LAWRENCE",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "LAWRENCE POLICE DEPT",
+    "mapped_town": "LAWRENCE",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "LEOMINSTER POLICE DEPT",
+    "mapped_town": "LEOMINSTER",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "LOWELL DISTRICT COURT",
+    "mapped_town": "LOWELL",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "LOWELL POLICE DEPT",
+    "mapped_town": "LOWELL",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "LYNN DISTRICT COURT",
+    "mapped_town": "LYNN",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "LYNN POLICE DEPARTMENT",
+    "mapped_town": "LYNN",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "MALDEN DISTRICT COURT",
+    "mapped_town": "MALDEN",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "MALDEN POLICE DEPT",
+    "mapped_town": "MALDEN",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "MANCHESTER ICE OFFICE",
+    "mapped_town": null,
+    "confidence": 0.0
+  },
+  {
+    "site_name": "MARLBOROUGH DISTRICT COURT",
+    "mapped_town": "MARLBOROUGH",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "MARLBOROUGH POLICE DEPT",
+    "mapped_town": "MARLBOROUGH",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "MASSACHUSETTS TREATMENT CENTER",
+    "mapped_town": "BRIDGEWATER",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "MCI FRAMINGHAM",
+    "mapped_town": "FRAMINGHAM",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "MCI NORFOLK",
+    "mapped_town": "NORFOLK",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "MCI SHIRLEY MEDIUM/MAXIMUM",
+    "mapped_town": "SHIRLEY",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "MDM GENERAL AREA, NON-SPECIFIC",
+    "mapped_town": null,
+    "confidence": 0.0
+  },
+  {
+    "site_name": "MERRIMACK COUNTY DOC",
+    "mapped_town": null,
+    "confidence": 0.0
+  },
+  {
+    "site_name": "MERRIMACK COUNTY NH",
+    "mapped_town": null,
+    "confidence": 0.0
+  },
+  {
+    "site_name": "MIDDLESEX COUNTY HOC",
+    "mapped_town": "BILLERICA",
+    "confidence": 0.9
+  },
+  {
+    "site_name": "MIDDLESEX COUNTY LOCAL PD",
+    "mapped_town": null,
+    "confidence": 0.0
+  },
+  {
+    "site_name": "MIDDLESEX SUPERIOR COURT",
+    "mapped_town": "WOBURN",
+    "confidence": 0.8
+  },
+  {
+    "site_name": "MILFORD DISTRICT COURT",
+    "mapped_town": "MILFORD",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "MILFORD POLICE DEPT",
+    "mapped_town": "MILFORD",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "NASHUA STREET JAIL",
+    "mapped_town": "BOSTON",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "NCCI GARDNER",
+    "mapped_town": "GARDNER",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "NEW BEDFORD DISTRICT COURT",
+    "mapped_town": "NEW BEDFORD",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "NEW BEDFORD POLICE DEPT",
+    "mapped_town": "NEW BEDFORD",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "NEWBURYPORT DISTRICT COURT",
+    "mapped_town": "NEWBURYPORT",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "NEWTON DISTRICT COURT",
+    "mapped_town": "NEWTON",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "NEWTON POLICE DEPT",
+    "mapped_town": "NEWTON",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "NON-DETAINED AND JUVENILE",
+    "mapped_town": null,
+    "confidence": 0.0
+  },
+  {
+    "site_name": "NORFOLK COUNTY HOC",
+    "mapped_town": "DEDHAM",
+    "confidence": 0.9
+  },
+  {
+    "site_name": "NORTHAMPTON POLICE DEPT",
+    "mapped_town": "NORTHAMPTON",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "OLD COLONY CORRECTIONAL",
+    "mapped_town": "BRIDGEWATER",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "OLDHAM COUNTY JAIL, KY",
+    "mapped_town": null,
+    "confidence": 0.0
+  },
+  {
+    "site_name": "PEABODY DISTRICT COURT",
+    "mapped_town": "PEABODY",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "PEABODY POLICE DEPT",
+    "mapped_town": "PEABODY",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "PLYMOUTH COUNTY HOC",
+    "mapped_town": "PLYMOUTH",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "PLYMOUTH DISTRICT COURT",
+    "mapped_town": "PLYMOUTH",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "PRO FUGOPS",
+    "mapped_town": null,
+    "confidence": 0.0
+  },
+  {
+    "site_name": "QUINCY POLICE DEPARTMENT",
+    "mapped_town": "QUINCY",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "REVERE POLICE DEPT",
+    "mapped_town": "REVERE",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "SLC GENERAL AREA, NON-SPECIFIC",
+    "mapped_town": null,
+    "confidence": 0.0
+  },
+  {
+    "site_name": "SNA GENERAL AREA, NON-SPECIFIC",
+    "mapped_town": null,
+    "confidence": 0.0
+  },
+  {
+    "site_name": "SPR GENERAL AREA, NON-SPECIFIC",
+    "mapped_town": "SPRINGFIELD",
+    "confidence": 0.7
+  },
+  {
+    "site_name": "SUFFOLK COUNTY SO (SOUTH BAY)",
+    "mapped_town": "BOSTON",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "TAUNTON DISTRICT COURT",
+    "mapped_town": "TAUNTON",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "TAUNTON POLICE DEPT",
+    "mapped_town": "TAUNTON",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "TEWSBURY POLICE DEPT",
+    "mapped_town": "TEWKSBURY",
+    "confidence": 0.95
+  },
+  {
+    "site_name": "US DISTRICT COURT",
+    "mapped_town": "BOSTON",
+    "confidence": 0.8
+  },
+  {
+    "site_name": "USCIS BOSTON, MA",
+    "mapped_town": "BOSTON",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "UXBRIDGE DISTRICT COURT",
+    "mapped_town": "UXBRIDGE",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "VAN BUREN COUNTY JAIL, PAW PAW, MI",
+    "mapped_town": null,
+    "confidence": 0.0
+  },
+  {
+    "site_name": "WALTHAM DISTRICT COURT",
+    "mapped_town": "WALTHAM",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "WALTHAM POLICE DEPT",
+    "mapped_town": "WALTHAM",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "WESTBOROUGH DISTRICT COURT",
+    "mapped_town": "WESTBOROUGH",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "WEYMOUTH POLICE DEPARTMENT",
+    "mapped_town": "WEYMOUTH",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "WOBURN DISTRICT COURT",
+    "mapped_town": "WOBURN",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "WOBURN POLICE DEPT",
+    "mapped_town": "WOBURN",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "WORCESTER COUNTY HOC",
+    "mapped_town": "WEST BOYLSTON",
+    "confidence": 0.9
+  },
+  {
+    "site_name": "WORCESTER DISTRICT COURT",
+    "mapped_town": "WORCESTER",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "WORCESTER POLICE DEPT",
+    "mapped_town": "WORCESTER",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "WRENTHAM DISTRICT COURT",
+    "mapped_town": "WRENTHAM",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "WRENTHAM POLICE DEPT",
+    "mapped_town": "WRENTHAM",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "ABINGTON POLICE DEPARTMENT",
+    "mapped_town": "ABINGTON",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "ACTON POLICE DEPT",
+    "mapped_town": "ACTON",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "AGAWAM POLICE DEPART",
+    "mapped_town": "AGAWAM",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "ASH ST JAIL BRISTOL CO",
+    "mapped_town": "NEW BEDFORD",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "ASHLAND POLICE DEPT",
+    "mapped_town": "ASHLAND",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "ATTLEBORO DISTRICT COURT",
+    "mapped_town": "ATTLEBORO",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "ATTLEBORO POLICE DEPT",
+    "mapped_town": "ATTLEBORO",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "AUBURN POLICE DEPT",
+    "mapped_town": "AUBURN",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "AYER DISTRICT COURT",
+    "mapped_town": "AYER",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "AYER POLICE DEPT",
+    "mapped_town": "AYER",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "BARNSTABLE COUNTY",
+    "mapped_town": "BARNSTABLE",
+    "confidence": 0.8
+  },
+  {
+    "site_name": "Barnstable Police",
+    "mapped_town": "BARNSTABLE",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "BEDFORD POLICE DEPT",
+    "mapped_town": "BEDFORD",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "BELLINGHAM POLICE DEPT",
+    "mapped_town": "BELLINGHAM",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "BERKSHIRE CNTY PITTSFIELD",
+    "mapped_town": "PITTSFIELD",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "BILLERICA POLICE DEPT",
+    "mapped_town": "BILLERICA",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "BOS POL DEPT D4 BACK BAY",
+    "mapped_town": "BOSTON",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "BOS POL DST B2 ROXBURY",
+    "mapped_town": "BOSTON",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "BOST PRERELEASE DORCHESTE",
+    "mapped_town": "BOSTON",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "BOSTON HOLDROOM",
+    "mapped_town": "BOSTON",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "BOSTON MNCPL CT CTRL DIV",
+    "mapped_town": "BOSTON",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "BOSTON POLICE DEPT",
+    "mapped_town": "BOSTON",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "BOSTON POLICE DEPT, DISTRICT #3",
+    "mapped_town": "BOSTON",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "BOSTON SPC",
+    "mapped_town": "BOSTON",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "BRAINTREE POLICE DEPT",
+    "mapped_town": "BRAINTREE",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "BRIGHTON DIV BOSTON MC",
+    "mapped_town": "BOSTON",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "BRISTOL CNTY NDARTMOUTH",
+    "mapped_town": "DARTMOUTH",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "BRISTOL CO SHERIFF'S OFC",
+    "mapped_town": "DARTMOUTH",
+    "confidence": 0.8
+  },
+  {
+    "site_name": "BRISTOL CTY, NEW BEDFORD",
+    "mapped_town": "NEW BEDFORD",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "BROCKTON DISTRICT COURT",
+    "mapped_town": "BROCKTON",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "BROCKTON POLICE DEPARTMENT",
+    "mapped_town": "BROCKTON",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "BROOKLINE POLICE DEPT.",
+    "mapped_town": "BROOKLINE",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "BURLINGTON POLICE DEPT",
+    "mapped_town": "BURLINGTON",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "BWATER ST HOSP BRIDGEWATE",
+    "mapped_town": "BRIDGEWATER",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "CAMBRIDGE DISTRICT CT",
+    "mapped_town": "CAMBRIDGE",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "CAMBRIDGE POLICE DEPT",
+    "mapped_town": "CAMBRIDGE",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "CHELMSFORD POLICE DEPT",
+    "mapped_town": "CHELMSFORD",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "CHELSEA DISTRICT COURT",
+    "mapped_town": "CHELSEA",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "CHELSEA POLICE DEPT",
+    "mapped_town": "CHELSEA",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "CHICOPEE POL DEPT",
+    "mapped_town": "CHICOPEE",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "CLINTON POLICE DEPARTMENT",
+    "mapped_town": "CLINTON",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "CONCORD DISTRICT CT",
+    "mapped_town": "CONCORD",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "CONCORD POLICE DEPT",
+    "mapped_town": "CONCORD",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "DANVERS POLICE DEPARTMENT",
+    "mapped_town": "DANVERS",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "DEDHAM DISTRICT COURT",
+    "mapped_town": "DEDHAM",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "DEDHAM POLICE DEPT",
+    "mapped_town": "DEDHAM",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "DENNIS POLICE DEPARTMENT",
+    "mapped_town": "DENNIS",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "DEVENS FMC",
+    "mapped_town": "AYER",
+    "confidence": 0.9
+  },
+  {
+    "site_name": "DEVEREUX ADV BHV HLT MASS NEW BEG",
+    "mapped_town": null,
+    "confidence": 0.0
+  },
+  {
+    "site_name": "DOC - MILFORD MA",
+    "mapped_town": "MILFORD",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "DORCHESTER DISTRICT COURT",
+    "mapped_town": "BOSTON",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "DRACUT POLICE DEPARTMENT",
+    "mapped_town": "DRACUT",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "DUDLEY DISTRICT COURT",
+    "mapped_town": "DUDLEY",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "DUKES COUNTY JAIL",
+    "mapped_town": "EDGARTOWN",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "DUNSTABLE POLICE DEPT",
+    "mapped_town": "DUNSTABLE",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "EAST BOSTON DIV MNCP CRT",
+    "mapped_town": "BOSTON",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "EAST HAMPSHIRE DISTRICT COURT",
+    "mapped_town": "BELCHERTOWN",
+    "confidence": 0.8
+  },
+  {
+    "site_name": "ESSEX CO. JAIL, MIDDLETON",
+    "mapped_town": "MIDDLETON",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "EVERETT PD HQ",
+    "mapped_town": "EVERETT",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "FALL RIVER DISTRICT COURT",
+    "mapped_town": "FALL RIVER",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "FALL RIVER POLICE DEPARTMENT",
+    "mapped_town": "FALL RIVER",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "FALMOUTH POL DEPT",
+    "mapped_town": "FALMOUTH",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "FITCHBURG POLICE DEPT",
+    "mapped_town": "FITCHBURG",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "FOXBOROUGH POL DEPT",
+    "mapped_town": "FOXBOROUGH",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "FRAMINGHAM DISTRICT CT",
+    "mapped_town": "FRAMINGHAM",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "FRAMINGHAM POLICE DEPT",
+    "mapped_town": "FRAMINGHAM",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "FRANKLIN HOUSE OF CORRECTIONS",
+    "mapped_town": "GREENFIELD",
+    "confidence": 0.95
+  },
+  {
+    "site_name": "GLOUCESTER DIST COURT",
+    "mapped_town": "GLOUCESTER",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "GREAT BARRINGTON POLICE",
+    "mapped_town": "GREAT BARRINGTON",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "GREENFIELD DISTRICT COURT",
+    "mapped_town": "GREENFIELD",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "HAMPDEN CO.HOUSE OF CORR.",
+    "mapped_town": "LUDLOW",
+    "confidence": 0.95
+  },
+  {
+    "site_name": "HAMPSHR CNTY NORTHAMPTON",
+    "mapped_town": "NORTHAMPTON",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "Haverhill PD",
+    "mapped_town": "HAVERHILL",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "HINGHAM DISTRICT COURT",
+    "mapped_town": "HINGHAM",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "HOLLISTON POLICE DEPT",
+    "mapped_town": "HOLLISTON",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "HOLYOKE PD",
+    "mapped_town": "HOLYOKE",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "HOPEDALE PD",
+    "mapped_town": "HOPEDALE",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "HOPKINTON POLICE DEPT",
+    "mapped_town": "HOPKINTON",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "HUDSON POLICE DEPT",
+    "mapped_town": "HUDSON",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "LANCASTER HOC",
+    "mapped_town": "LANCASTER",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "LAWRENCE DISTRICT COURT",
+    "mapped_town": "LAWRENCE",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "LAWRENCE POLICE DEPT",
+    "mapped_town": "LAWRENCE",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "LEOMINSTER DISTRICT COURT",
+    "mapped_town": "LEOMINSTER",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "LEOMINSTER POLICE DEPT",
+    "mapped_town": "LEOMINSTER",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "LEXINGTON POLICE DEPT",
+    "mapped_town": "LEXINGTON",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "LITTLETON POLICE DEPT",
+    "mapped_town": "LITTLETON",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "LOWELL DISTRICT COURT",
+    "mapped_town": "LOWELL",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "LOWELL POLICE DEPARTMENT",
+    "mapped_town": "LOWELL",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "LYNN DISTRICT COURT",
+    "mapped_town": "LYNN",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "LYNN POLICE DEPT",
+    "mapped_town": "LYNN",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "MA ALCOHOL SUB-ABUSE CTR",
+    "mapped_town": "BRIDGEWATER",
+    "confidence": 0.8
+  },
+  {
+    "site_name": "MA SP MEDFORD BARRACKS",
+    "mapped_town": "MEDFORD",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "MA ST POL A1 ANDOVER",
+    "mapped_town": "ANDOVER",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "MA ST POL A5 REVERE",
+    "mapped_town": "REVERE",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "MA ST POL B8 WESTFIELD",
+    "mapped_town": "WESTFIELD",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "MA ST POL C4 LEOMINSTER",
+    "mapped_town": "LEOMINSTER",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "MA STATE POL BRIGHTON",
+    "mapped_town": "BOSTON",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "MA STATE POL H-9 TUNNELS",
+    "mapped_town": "BOSTON",
+    "confidence": 0.9
+  },
+  {
+    "site_name": "MA STATE POLICE - A3 CONCORD BARRA",
+    "mapped_town": "CONCORD",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "MA STATE POLICE LOGAN BRKS TROOP F",
+    "mapped_town": "BOSTON",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "MALDEN DISTRICT COURT",
+    "mapped_town": "MALDEN",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "MALDEN POLICE DEPT",
+    "mapped_town": "MALDEN",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "MANSFIELD POLICE DEPT",
+    "mapped_town": "MANSFIELD",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "MARLBOROUGH DISTRICT CT",
+    "mapped_town": "MARLBOROUGH",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "MARLBOROUGH POLICE DEPT",
+    "mapped_town": "MARLBOROUGH",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "MASS SP C5 STURBRIDGE",
+    "mapped_town": "STURBRIDGE",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "MASS SP DANVERS A6",
+    "mapped_town": "DANVERS",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "MASS SP H7 MILTON",
+    "mapped_town": "MILTON",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "MASS SP MILLBURY BARRACKS",
+    "mapped_town": "MILLBURY",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "MASS ST POL C2 MILLBURY",
+    "mapped_town": "MILLBURY",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "MASSACHUSETTS STATE POLICE",
+    "mapped_town": null,
+    "confidence": 0.0
+  },
+  {
+    "site_name": "MASSACHUSETTS STATE POLICE, LEE",
+    "mapped_town": "LEE",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "MASSACHUSETTS TREATMENT CENTER",
+    "mapped_town": "BRIDGEWATER",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "MAYNARD POLICE DEPT",
+    "mapped_town": "MAYNARD",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "MBTA TRANSIT PD",
+    "mapped_town": "BOSTON",
+    "confidence": 0.8
+  },
+  {
+    "site_name": "MCI CEDAR JUNCTION",
+    "mapped_town": "WALPOLE",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "MCI NORFOLK",
+    "mapped_town": "NORFOLK",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "MCI SHIRLEY",
+    "mapped_town": "SHIRLEY",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "MCI, FRAMINGHAM",
+    "mapped_town": "FRAMINGHAM",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "MEDFORD POLICE DEPT",
+    "mapped_town": "MEDFORD",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "MELROSE POLICE DEPT",
+    "mapped_town": "MELROSE",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "MENDON POLICE DEPT",
+    "mapped_town": "MENDON",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "METHUEN POLICE DEPT",
+    "mapped_town": "METHUEN",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "MIDDLEBORO POLICE DEPT",
+    "mapped_town": "MIDDLEBOROUGH",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "MIDDLESEX CO SUPERIOR COURT",
+    "mapped_town": "WOBURN",
+    "confidence": 0.8
+  },
+  {
+    "site_name": "MIDDLESEX COUNTY H.O.C.-BILLERICA",
+    "mapped_town": "BILLERICA",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "MIDDLESEX COUNTY-CAMBRIDGE",
+    "mapped_town": "CAMBRIDGE",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "MIDDLESEX HSE OF CORRECTION & JAIL",
+    "mapped_town": "BILLERICA",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "MILFORD POL DEPT",
+    "mapped_town": "MILFORD",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "Nantucket PD",
+    "mapped_town": "NANTUCKET",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "NASHUA ST. JAIL",
+    "mapped_town": "BOSTON",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "NATICK POLICE DEPT",
+    "mapped_town": "NATICK",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "NCCI GARDNER",
+    "mapped_town": "GARDNER",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "NEW BEDFORD DISTRICT COURT",
+    "mapped_town": "NEW BEDFORD",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "NEW BEDFORD PD",
+    "mapped_town": "NEW BEDFORD",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "NEWBURY POLICE DEPARTMENT",
+    "mapped_town": "NEWBURY",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "NEWBURYPORT DISTRICT CT",
+    "mapped_town": "NEWBURYPORT",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "NEWTON DISTRICT COURT",
+    "mapped_town": "NEWTON",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "NEWTON POLICE DEPT",
+    "mapped_town": "NEWTON",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "NORFLK CNTY DEDHAM",
+    "mapped_town": "DEDHAM",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "NORFOLK POLICE DEPT",
+    "mapped_town": "NORFOLK",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "NORTH ANDOVER PD",
+    "mapped_town": "NORTH ANDOVER",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "NORTH ATTLEBORO POLICE DEPT.",
+    "mapped_town": "NORTH ATTLEBOROUGH",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "NORTHBOROUGH POLICE DEPARTMENT",
+    "mapped_town": "NORTHBOROUGH",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "NORWOOD POLICE DEPARTMENT",
+    "mapped_town": "NORWOOD",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "OAK BLUFFS AVE",
+    "mapped_town": "OAK BLUFFS",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "PEABODY DISTRICT COURT",
+    "mapped_town": "PEABODY",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "PEABODY PD",
+    "mapped_town": "PEABODY",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "PITTSFIELD POLICE DEPT",
+    "mapped_town": "PITTSFIELD",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "PLYMOUTH CO COR FACILTY",
+    "mapped_town": "PLYMOUTH",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "PLYMOUTH CO SUP CT BROCKTON",
+    "mapped_town": "BROCKTON",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "PLYMOUTH DISTRICT COURT",
+    "mapped_town": "PLYMOUTH",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "PLYMOUTH POLICE DEPT",
+    "mapped_town": "PLYMOUTH",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "PONDVIL CORR NORFOLK",
+    "mapped_town": "NORFOLK",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "PROVINCETOWN POLICE DEPARTMENT",
+    "mapped_town": "PROVINCETOWN",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "QUINCY DISTRICT COURT",
+    "mapped_town": "QUINCY",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "QUINCY POLICE DEPARTMENT",
+    "mapped_town": "QUINCY",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "RANDOLPH POLICE DEPARTMENT",
+    "mapped_town": "RANDOLPH",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "REVERE POLICE DEPT",
+    "mapped_town": "REVERE",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "ROCKLAND POLICE DEPT",
+    "mapped_town": "ROCKLAND",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "ROXBURY MUNICIPAL COURT",
+    "mapped_town": "BOSTON",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "SALEM DISTRICT COURT",
+    "mapped_town": "SALEM",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "SALEM POLICE DEPARTMENT",
+    "mapped_town": "SALEM",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "SANDWICH POLICE DEPT",
+    "mapped_town": "SANDWICH",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "SAUGUS POLICE DEPT",
+    "mapped_town": "SAUGUS",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "SE COR CNTR BRIDGEWATER",
+    "mapped_town": "BRIDGEWATER",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "SHERBORN POLICE DEPT",
+    "mapped_town": "SHERBORN",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "SHREWSBURY POLICE DEPT.",
+    "mapped_town": "SHREWSBURY",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "SOMERVILLE DISTRICT COURT",
+    "mapped_town": "SOMERVILLE",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "SOMERVILLE POLICE DEPT",
+    "mapped_town": "SOMERVILLE",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "SOUSA-BARANOWSKI CORR. CENTER",
+    "mapped_town": "SHIRLEY",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "SOUTHBOROUGH POL DEPT",
+    "mapped_town": "SOUTHBOROUGH",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "SPRINGFIELD POLICE DEPT",
+    "mapped_town": "SPRINGFIELD",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "STATE PATROL BRKS CHRLTON",
+    "mapped_town": "CHARLTON",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "STATE POLICE FRAMINGHAM",
+    "mapped_town": "FRAMINGHAM",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "STATE POLICE MIDDLEBOROUGH",
+    "mapped_town": "MIDDLEBOROUGH",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "STOUGHTON PD",
+    "mapped_town": "STOUGHTON",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "STURBRIDGE POLICE DEPARTMENT",
+    "mapped_town": "STURBRIDGE",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "SUDBURY POLICE DEPT",
+    "mapped_town": "SUDBURY",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "SUFFOLK HOC SBAY",
+    "mapped_town": "BOSTON",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "SUFFOLK SUPERIOR COURT",
+    "mapped_town": "BOSTON",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "TAUNTON STATE HOSPITAL",
+    "mapped_town": "TAUNTON",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "TEWKSBURY POLICE DEPT",
+    "mapped_town": "TEWKSBURY",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "US MARSHALS, BOSTON,MA",
+    "mapped_town": "BOSTON",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "W ROXBRY DIV BOS MNPL CT",
+    "mapped_town": "BOSTON",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "WALTHAM DISTRICT COURT",
+    "mapped_town": "WALTHAM",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "WALTHAM POLICE DEPT.",
+    "mapped_town": "WALTHAM",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "WATERTOWN POLICE DEPARTMENT",
+    "mapped_town": "WATERTOWN",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "WAYLAND POLICE DEPT",
+    "mapped_town": "WAYLAND",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "WELLESLEY POL DEPT",
+    "mapped_town": "WELLESLEY",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "WESTBOROUGH POL DEPT",
+    "mapped_town": "WESTBOROUGH",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "WESTFORD POLICE DEPT",
+    "mapped_town": "WESTFORD",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "WESTON POLICE DEPT",
+    "mapped_town": "WESTON",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "WEYMOUTH POLICE DEPT",
+    "mapped_town": "WEYMOUTH",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "WILMINGTON POLICE DEPT",
+    "mapped_town": "WILMINGTON",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "WINCHESTER POLICE DEPT",
+    "mapped_town": "WINCHESTER",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "WINTHROP POLICE DEPT",
+    "mapped_town": "WINTHROP",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "WOBURN DISTRICT COURT",
+    "mapped_town": "WOBURN",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "WOBURN POLICE DEPT",
+    "mapped_town": "WOBURN",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "WORCESTER COUNTY DIST CT",
+    "mapped_town": "WORCESTER",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "WORCESTER POLICE DEPARTMENT",
+    "mapped_town": "WORCESTER",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "WRSTR CNTY W BOYLSTON",
+    "mapped_town": "WEST BOYLSTON",
+    "confidence": 1.0
+  },
+  {
+    "site_name": "YARMOUTH PD",
+    "mapped_town": "YARMOUTH",
+    "confidence": 1.0
+  }
+]
