@@ -1,0 +1,57 @@
+/* Desktop: Vertical stack at top of sidebar */
+.tabContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  background-color: #1f3a7d;
+  padding: 6px;
+  border-radius: 6px;
+  width: auto;
+  min-width: 80px;
+  box-sizing: border-box;
+}
+
+.tabButton {
+  padding: 8px 12px;
+  background-color: transparent;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 0.75em;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.tabButton:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.tabButtonActive {
+  background-color: #ffffff;
+  color: #2f549d;
+  font-weight: 600;
+}
+
+.tabButtonActive:hover {
+  background-color: #f0f0f0;
+}
+
+/* Mobile: Horizontal tabs at top */
+@media (max-width: 768px) {
+  .tabContainer {
+    flex-direction: row;
+    padding: 3px;
+    width: 100%;
+    min-width: auto;
+  }
+
+  .tabButton {
+    flex: 1;
+    padding: 6px 10px;
+    font-size: 0.8em;
+  }
+}
