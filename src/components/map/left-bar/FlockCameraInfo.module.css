@@ -1,0 +1,113 @@
+.panelBase {
+  position: fixed;
+  left: 4rem;
+  top: 7rem;
+  width: 18vw;
+  min-width: 240px;
+  max-height: 50vh;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  display: flex;
+  color: white;
+  pointer-events: auto;
+  transition: width 0.3s;
+}
+
+/* Custom white scrollbar for Chrome, Safari, Edge */
+.panelBase::-webkit-scrollbar {
+  width: 8px;
+  background: #2f549d;
+}
+.panelBase::-webkit-scrollbar-thumb {
+  background: #fff;
+  border-radius: 8px;
+}
+.panelBase::-webkit-scrollbar-track {
+  background: #2f549d;
+  border-radius: 8px;
+}
+
+.panelLoading,
+.panelNoCamera {
+  justify-content: center;
+  align-items: center;
+  background-color: #2f549d;
+  padding: 12px;
+  font-size: 1em;
+}
+
+.panelCamera {
+  background-color: #f7f7f7;
+  color: white;
+  font-size: 0.95em;
+  flex-direction: column;
+  gap: 12px;
+  justify-content: flex-start;
+  align-items: stretch;
+  padding-bottom: 1rem;
+}
+
+.exitButton {
+  position: absolute;
+  top: 0.1rem;
+  right: 0.1rem;
+  height: 2.5rem;
+  width: 2.5rem;
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 2em;
+  cursor: pointer;
+  z-index: 1100;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.exitButton:hover {
+  background: transparent;
+}
+
+.header {
+  padding: 0.75rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.1em;
+  background-color: #008080;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.headerTitle {
+  font-weight: bold;
+  font-size: 1.4em;
+  color: #ffffff;
+  overflow: clip;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  color: #00275e;
+  font-size: 0.95em;
+  margin: 0rem 1.25rem;
+  overflow-y: auto;
+  padding-bottom: 0.5rem;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.label {
+  font-weight: bold;
+  font-size: 0.9em;
+  color: #00275e;
+}
+
+.value {
+  margin-top: 4px;
+  white-space: pre-line;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
