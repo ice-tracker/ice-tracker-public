@@ -1,0 +1,21 @@
+.exportButton {
+  background-color: #2f549d;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-weight: 600;
+  font-size: 0.95em;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  transition: background-color 0.2s ease;
+}
+
+.exportButton:hover:not(:disabled) {
+  background-color: #1f3a7d;
+}
+
+.exportButton:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}

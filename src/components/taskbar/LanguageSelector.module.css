@@ -1,0 +1,114 @@
+/* Match navLink style from Taskbar.module.css */
+.languageSelectorDropdown {
+  position: relative;
+  display: flex;
+  height: 100%;
+}
+
+.languageSelectorDropdown label {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-right: 0.5rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.languageButton,
+.languageSelectorDropdown select {
+  background-color: #2f549d;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  border: none;
+  padding: 0.75rem 1rem;
+  min-width: 8rem;
+  height: 10vh;
+  transition: all 0.3s ease;
+  outline: none;
+  cursor: pointer;
+  box-shadow: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0;
+}
+
+.languageButton:hover {
+  background-color: #fff;
+  color: #2f549d;
+}
+
+.languageSelectorDropdown select:focus,
+.languageSelectorDropdown select:active {
+  background-color: #1d3766;
+  color: #fff;
+  outline: 2px solid #ffd700;
+  outline-offset: 2px;
+}
+
+.languageSelectorDropdown select:hover {
+  background-color: #fff;
+  color: #2f549d;
+}
+
+.languageDropdownMenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 8rem;
+  background: #fff;
+
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  margin-top: 0.5rem;
+  z-index: 201;
+  padding: 0.25rem 0;
+  list-style: none;
+}
+
+.languageDropdownItem {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  color: #2f549d;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  transition: background 0.2s, color 0.2s;
+  outline: none;
+}
+
+.languageDropdownItem[aria-selected="true"],
+.languageDropdownItem:hover,
+.languageDropdownItem:focus {
+  background: #2f549d;
+  color: #fff;
+}
+
+/* Mobile */
+@media (max-width: 1024px) {
+  .languageSelectorDropdown {
+    flex-direction: column;
+    height: 3.5rem;
+    width: 100%;
+    min-width: unset;
+  }
+  .languageButton,
+  .languageSelectorDropdown select {
+    height: 3.5rem;
+    min-width: 7rem;
+    font-size: 1rem;
+    padding: 0.75rem 1rem;
+  }
+}
+
+/* Large screens */
+@media (min-width: 1536px) {
+  .languageButton,
+  .languageSelectorDropdown select {
+    min-width: 8rem;
+    font-size: 1.25rem;
+    height: 10vh;
+  }
+}

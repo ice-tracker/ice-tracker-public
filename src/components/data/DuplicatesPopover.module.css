@@ -1,0 +1,120 @@
+.wrapper {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.iconButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 3px 5px;
+  border-radius: 4px;
+  color: #1976d2;
+  transition: background 0.15s;
+}
+
+.iconButton:hover {
+  background: rgba(25, 118, 210, 0.1);
+}
+
+.badge {
+  font-size: 11px;
+  font-weight: 600;
+  background: #1976d2;
+  color: #fff;
+  border-radius: 10px;
+  padding: 0 5px;
+  line-height: 16px;
+  min-width: 16px;
+  text-align: center;
+}
+
+/* Popover */
+.popover {
+  z-index: 9999;
+  background: #fff;
+  border: 1px solid #dde1e7;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.13);
+  min-width: 480px;
+  max-width: 680px;
+}
+
+.popoverHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px;
+  border-bottom: 1px solid #eee;
+  font-size: 13px;
+  font-weight: 600;
+  color: #333;
+}
+
+.closeBtn {
+  background: none;
+  border: none;
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+  color: #888;
+  padding: 0 2px;
+}
+
+.closeBtn:hover {
+  color: #333;
+}
+
+.tableWrapper {
+  overflow-x: auto;
+  max-height: 260px;
+  overflow-y: auto;
+}
+
+.miniTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12.5px;
+}
+
+.miniTable thead th {
+  position: sticky;
+  top: 0;
+  background: #f5f7fa;
+  font-weight: 600;
+  text-align: left;
+  padding: 7px 12px;
+  color: #555;
+  border-bottom: 1px solid #e0e0e0;
+  white-space: nowrap;
+}
+
+.miniTable tbody tr:not(:last-child) td {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.miniTable tbody tr:hover td {
+  background: #f9fbff;
+}
+
+.miniTable td {
+  padding: 7px 12px;
+  color: #333;
+  vertical-align: top;
+  max-width: 220px;
+}
+
+/* Description cell can wrap */
+.miniTable td:last-child {
+  white-space: normal;
+  word-break: break-word;
+}
+
+/* Other cells stay on one line */
+.miniTable td:not(:last-child) {
+  white-space: nowrap;
+}

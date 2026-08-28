@@ -1,0 +1,71 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# env files (can opt-in for committing if needed)
+.env*
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# clerk configuration (can include secrets)
+/.clerk/
+/generated/prisma
+
+# lead SWE
+.claude
+
+# local-only consolidated working notes (kept out of the repo)
+/SULAF_UPDATE.md
+/FIXFILTERCARDINFO.md
+/MOBILEVIEWIMPROVEMENT.md
+/INVALIDFILTERFIX.md
+/ANONYMIZATIONUPDATE.md
+/SLOWMAPFIX.md
+
+# local DB dumps — Report.csv carries the real (un-anonymized) Latitude/Longitude
+/db-export/
+
+# local export helper — contains a hardcoded database credential
+/export_csv.ps1
+
+# Census CSVs: the SUB-EST source download and the cleaned outputs derived from
+# it. Both are reproducible from prisma/scripts/clean_census_csv.cjs, so neither
+# is committed — see "Loading Census data" in CLAUDE.md for the download URL.
+/data/*.csv
+
+# prisma/scripts holds committed data-import tooling. A bare "scripts" pattern in
+# .git/info/exclude matches at any depth, so re-include it here (.gitignore wins).
+!/prisma/scripts/
