@@ -1,0 +1,386 @@
+/* MapFilters.module.css */
+
+.mapFiltersContainer {
+  background-color: white;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 90vh;
+  /* Was 15vw, which gave the widest label ("Deportation Statistics", 220px)
+     only 186px at 1440 and wrapped it on essentially every laptop. Defined in
+     MapSection.module.css on .mapSectionRoot; see the derivation there. The
+     fallback keeps this readable in isolation and never applies in the app. */
+  width: var(--sidebar-filters-w, 15vw);
+  overflow-x: hidden;
+}
+
+.mapFiltersTitle {
+  font-size: 2em;
+  margin: 5px;
+  color: #00275e;
+}
+
+.clearFiltersButton {
+  background: #e0e7ef;
+  color: #2f549d;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 14px;
+  font-weight: 600;
+  font-size: 1em;
+  cursor: pointer;
+  margin: 8px 0 12px 0;
+  /* Was 11vw. These controls used to size off the viewport independently of
+     their container, so they only lined up with the panel by coincidence at
+     one width; now that the panel is content-sized they have to follow it. */
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.clearFiltersButton:hover {
+  background: #c6ccd3;
+  transition: 0.4s;
+}
+
+.filterLabel {
+  font-weight: bold;
+  color: #2f549d;
+}
+
+.filterHint {
+  margin: 6px 0 0 0;
+  font-size: 0.78em;
+  line-height: 1.35;
+  color: #666;
+}
+
+.checkboxGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.checkboxLabel {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  color: #333;
+  font-weight: 400;
+  font-size: 0.95em;
+}
+
+.checkboxLabel input[type="checkbox"] {
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+  accent-color: #2f549d;
+}
+
+/* All four were 12vw — see the note on .clearFiltersButton. A percentage of the
+   panel also lets the native <select>s shrink to fit rather than forcing the
+   panel wider: their intrinsic width follows the longest option, which for the
+   town dropdown is live data. */
+.filterInput,
+.filterSelect {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  width: 100%;
+  /* Without this a <select> refuses to go below its longest option's width and
+     pushes past the panel, where overflow-x: hidden silently clips it. */
+  min-width: 0;
+}
+
+.filterDateContainer {
+  display: flex;
+  gap: 4px;
+  flex-direction: column;
+  width: 100%;
+}
+
+.countyTownContainer {
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+  width: 100%;
+}
+
+.filterDateInput {
+  flex: 1;
+  min-width: 0;
+  padding: 6px 4px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.filterDateTo {
+  align-self: center;
+}
+
+/* Hamburger and Close Icons */
+.hamburgerIcon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+}
+
+.hamburgerLine {
+  display: block;
+  height: 3px;
+  background: #2f549d;
+  margin: 4px 0;
+  border-radius: 2px;
+}
+
+.closeIcon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  position: relative;
+}
+
+.closeLine1,
+.closeLine2 {
+  position: absolute;
+  left: 5px;
+  top: 11px;
+  width: 14px;
+  height: 2px;
+  background: #2f549d;
+  border-radius: 2px;
+}
+
+.closeLine1 {
+  transform: rotate(45deg);
+}
+
+.closeLine2 {
+  transform: rotate(-45deg);
+}
+
+.hamburgerIcon {
+  background: none !important;
+  outline: none !important;
+  -webkit-tap-highlight-color: transparent;
+  box-shadow: none;
+}
+
+/* Phones and tablets (<= 1024px). This bound must stay in step with the
+   `window.innerWidth <= 1024` check in MapFilters.tsx, which picks the sheet
+   vs desktop JSX branch, and with the same check in OLMap.tsx, which picks the
+   map's fly-to recentring offset. See MOBILEVIEWIMPROVEMENT.md item #27. */
+@media (max-width: 1024px) {
+  .mapFiltersContainer {
+    /* Anchored to the actual viewport (position: fixed), not to .sidebarInner
+       (position: absolute would inherit .sidebar's bottom-anchored position on
+       mobile, pushing this panel to start halfway down the screen and cutting
+       off the last accordion section with no way to scroll to it). */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    /* Full-bleed. 100vh first as the fallback, then 100dvh where supported so
+       the bottom edge tracks the browser chrome on iOS/Android instead of
+       sitting under the URL bar. Deliberately NOT `bottom: 0`: for a fixed box
+       that resolves against the layout viewport, which on iOS Safari is the
+       tall URL-bar-hidden one. */
+    height: 100vh;
+    height: 100dvh;
+    /* No max-height. The old `max-height: 90vh` is what left the bottom ~10vh
+       of the screen showing the blue report list underneath; `min-height` was a
+       leftover from the earlier 60vh partial sheet. */
+    z-index: 2200;
+    background: #fff;
+    /* Squared off — rounded corners only made sense when this was a partial
+       sheet with the map behind it. */
+    border-radius: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* Top clears the 44px fixed header bar; bottom keeps the last accordion
+       row off the home indicator. */
+    padding: 54px 10px calc(24px + env(safe-area-inset-bottom, 0px)) 10px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .mapFiltersTitle {
+    font-size: 1.3em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .clearFiltersButton {
+    width: 90vw;
+    font-size: 1em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .filterInput,
+  .filterSelect,
+  .filterDateContainer,
+  .countyTownContainer {
+    width: 90vw;
+    min-width: 0;
+  }
+  .filterDateContainer {
+    flex-direction: column;
+    gap: 4px;
+  }
+  .mobileDragHandle {
+    width: 40px;
+    height: 5px;
+    background: #ffffff;
+    border-radius: 3px;
+    margin: 0 auto 10px auto;
+    display: block;
+  }
+  .mapFiltersCollapsedBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2300;
+    width: 100vw;
+    height: 44px;
+    background: #fff;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    /* box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.18); */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    border-bottom: 1px solid #eee;
+  }
+  /* Expanded state only. The bar above is reused collapsed, where it sits on
+     the bottom sheet's top edge and the 18px radius and divider are both
+     right. Expanded it is portaled to <body>, so `fixed` here is the real
+     viewport, and it reads as the top of one uninterrupted white page.
+     Restore `border-bottom: 1px solid #eee` if the header ever needs to be
+     distinguishable from content scrolling under it. */
+  .mapFiltersExpandedBar {
+    border-radius: 0;
+    border-bottom: none;
+  }
+  .mapFiltersCollapsedTitle {
+    font-weight: 600;
+    color: #2f549d;
+    font-size: 1.1em;
+  }
+  .mapFiltersExpandButton {
+    background: none;
+    color: #2f549d;
+    border: none;
+    border-radius: 8px;
+    padding: 2px 12px;
+    font-size: 1.2em;
+    font-weight: 600;
+    cursor: pointer;
+    margin-right: 0px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    height: 80%;
+    align-items: center;
+    justify-content: center;
+    /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); */
+  }
+  .mapFiltersCollapseButton {
+    position: absolute;
+    top: 16px;
+    right: 18px;
+    background: none;
+    color: #2f549d;
+    border: none;
+    border-radius: 8px;
+    padding: 4px 14px;
+    font-size: 1.2em;
+    font-weight: 600;
+    cursor: pointer;
+    z-index: 2200;
+    margin-right: 8px;
+    margin-top: 6px;
+    margin-bottom: 8px;
+    height: 80%;
+    align-items: center;
+    justify-content: center;
+    /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); */
+  }
+  .mobileDropdownContainer {
+    position: relative;
+    width: 100vw;
+    height: 100%;
+  }
+}
+
+/* Hide drag handle on desktop */
+@media (min-width: 1025px) {
+  .mobileDragHandle {
+    display: none;
+  }
+}
+
+/* Tab Switcher Styles */
+/* Desktop: Horizontal compact tabs */
+.tabContainer {
+  display: flex;
+  gap: 6px;
+  background-color: #e0e7ef;
+  padding: 4px;
+  border-radius: 6px;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 0 8px 0;
+}
+
+.tabButton {
+  flex: 1;
+  padding: 6px 8px;
+  background-color: transparent;
+  color: #2f549d;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 0.75em;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.tabButton:hover {
+  background-color: rgba(47, 84, 157, 0.1);
+}
+
+.tabButtonActive {
+  background-color: #2f549d;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.tabButtonActive:hover {
+  background-color: #1f3a7d;
+}
+
+/* Mobile: Same horizontal layout */
+.tabContainerMobile {
+  display: flex;
+  gap: 6px;
+  background-color: #e0e7ef;
+  padding: 4px;
+  border-radius: 6px;
+  width: 90vw;
+  margin: 0 auto 10px auto;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1024px) {
+  .tabContainer {
+    width: 90vw;
+    margin: 0 auto 10px auto;
+  }
+}

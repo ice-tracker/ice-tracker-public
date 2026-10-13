@@ -1,0 +1,87 @@
+.container {
+  font-family: "Montserrat", sans-serif;
+}
+
+.section {
+  margin-bottom: 28px;
+}
+
+.sectionTitle {
+  font-size: 1.05em;
+  font-weight: 600;
+  color: #333;
+  margin: 0 0 4px;
+}
+
+.sectionHint {
+  font-size: 0.85em;
+  color: #6b7280;
+  margin: 0 0 12px;
+  max-width: 720px;
+}
+
+.emptyState {
+  font-size: 0.9em;
+  color: #6b7280;
+  padding: 8px 0;
+}
+
+.group {
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  padding: 10px 12px;
+  margin-bottom: 12px;
+  background: #fff;
+}
+
+.groupTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.groupTable thead th {
+  text-align: left;
+  padding: 6px 10px;
+  color: #555;
+  font-weight: 600;
+  border-bottom: 1px solid #e0e0e0;
+  white-space: nowrap;
+}
+
+.groupTable tbody td {
+  padding: 6px 10px;
+  color: #333;
+  vertical-align: top;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.actionButton {
+  margin-top: 10px;
+  padding: 6px 14px;
+  border: 1px solid #dc2626;
+  border-radius: 4px;
+  background: white;
+  color: #dc2626;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.85em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+
+.actionButton:hover:not(:disabled) {
+  background: #fee2e2;
+}
+
+.actionButton:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.errorText {
+  color: #dc2626;
+  font-size: 0.82em;
+  font-weight: 600;
+  margin: 6px 0 0;
+}

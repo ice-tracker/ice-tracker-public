@@ -1,0 +1,418 @@
+/* MapSection.module.css */
+
+.mapSectionRoot {
+  display: flex;
+  width: 100%;
+  height: 90%;
+  max-height: 100%;
+  position: relative;
+  overflow: hidden;
+
+  /* Desktop sidebar column widths. Declared here, on the one ancestor both
+     columns and the area-stats card share, so the three CSS modules involved
+     read a single source instead of restating the numbers. Custom property
+     names are not hashed by CSS Modules, so MapFilters.module.css and
+     EventList.module.css can use these directly.
+
+     Only meaningful at >= 1025px. Below that the sidebar is a full-width bottom
+     sheet and both columns are 100vw (see MOBILEVIEWIMPROVEMENT.md #27).
+
+     The floors are derived, not guessed. Filters: the widest label
+     "Deportation Statistics" measures 220px, plus the 24px accordion icon
+     (including its 12px padding-left) plus 15px padding each side = 274px.
+     Under that it wraps — which it did at every width up to 1827px back when
+     this column was a flat 15vw. List: below ~230px the Reports/POIs/Flock tab
+     captions clip. Ceilings stop either column eating the map on a wide
+     display. See MOBILEVIEWIMPROVEMENT.md #28. */
+  --sidebar-filters-w: clamp(274px, 19vw, 340px);
+  --sidebar-list-w: clamp(230px, 20vw, 400px);
+  /* Must stay the sum of the two. `.sidebarClosed` and `.areaStatsFlush` below
+     are positioned off the sidebar's real edge; both used to hard-code "35vw"
+     (15vw + 20vw) by hand, which silently went wrong the moment either column
+     changed and nothing anywhere enforced the arithmetic. */
+  --sidebar-w: calc(var(--sidebar-filters-w) + var(--sidebar-list-w));
+
+  /* Top edge for every card that floats over the map, so none of them can slide
+     under the taskbar. The taskbar is `height: 10vh`
+     (Taskbar.module.css) — proportional — while these cards used to sit at a
+     flat `top: 7rem` (112px). They collided the moment 10vh exceeded 112px,
+     i.e. at any viewport taller than 1120px, and the card's close button went
+     with them: at 1500px tall the X sat 38px inside the banner and hit-tested
+     to the taskbar, so the card could be opened and then not closed.
+
+     Both sides scale together now, so the collision cannot recur at any
+     height. Declared here because .mapSectionRoot is the common ancestor of
+     all three cards, and custom property names are not hashed by CSS Modules,
+     so the two left-bar stylesheets read it directly. Same reasoning that
+     replaced the hand-copied 35vw with --sidebar-w above.
+
+     Consistent with the mobile area-stats rule further down, which has used
+     `calc(10vh + 3.5rem)` since #20 for exactly this reason. See
+     MOBILEVIEWIMPROVEMENT.md #29. */
+  --below-nav: calc(10vh + 1rem);
+}
+
+.sidebar {
+  position: fixed;
+  display: flex;
+  left: 0px; /* default, will be overridden inline for open/close */
+  height: 100%;
+  transition: left 0.3s ease-in-out;
+  z-index: 2000;
+  background-color: white;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.sidebarClosed {
+  left: calc(-1 * var(--sidebar-w));
+}
+
+.sidebarOpen {
+  left: 0px;
+}
+
+.sidebarInner {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  z-index: 2000;
+}
+
+.collapseButton {
+  /* Remove absolute positioning for mobile, keep for desktop */
+  position: absolute;
+  right: -30px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #ffffff;
+  color: #2f549d;
+  stroke: 800;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  padding: 10px 12px;
+  cursor: pointer;
+  z-index: 101;
+  height: 10vh;
+  font-size: 15px;
+  font-weight: 700; /* Added weight */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18); /* Added shadow */
+}
+
+.collapseButton:hover {
+  background-color: #f2f4f8;
+}
+
+.desktopOnly {
+  display: inline;
+}
+
+.mobileOnly {
+  display: none;
+}
+
+.mapContainer {
+  width: 100%;
+  height: 100%;
+  background: #eaf2fb; /* fallback background color */
+  border-radius: 12px; /* optional, for rounded corners */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); /* optional, subtle shadow */
+  position: relative;
+  z-index: 1;
+}
+
+/* Town/County LUCE + DDP stats card wrapper. Sized as a percentage (no pixel
+   floor) so it stays a slim side panel instead of dominating the map, and
+   positioned flush against the sidebar's own edge via `--sidebar-w` when the
+   sidebar is open, or a small inset from the viewport edge when it's
+   collapsed — rather than a fixed distance from the viewport that ignores the
+   sidebar entirely.
+
+   Its own `width: 20vw` below is NOT the list column's width, despite once
+   having been the same number. This card floats over the map and is unrelated;
+   do not "fix" it into `--sidebar-list-w` by reflex. */
+.areaStatsWrapper {
+  position: fixed;
+  top: var(--below-nav);
+  z-index: 1000;
+  width: 20vw;
+  min-width: 220px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-height: 70vh;
+  overflow-y: auto;
+  transition: left 0.3s ease-in-out;
+}
+
+.areaStatsWrapper::-webkit-scrollbar {
+  width: 8px;
+}
+
+.areaStatsWrapper::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 8px;
+}
+
+.areaStatsWrapper::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* --- Tabbed area card (design 1a) ---------------------------------------
+   Shown only when the Deportation Statistics toggle is on, i.e. when there
+   are genuinely two datasets to switch between. With DDP off there is one
+   card and no tab row, exactly as before.
+
+   The tab row IS the comparison: it names both sources and shows which one
+   you are reading, so the pane below no longer repeats the dataset name in
+   its heading (see `inTabs` in MapSection.tsx). */
+.areaTabbedCard {
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.areaTabRow {
+  display: flex;
+}
+
+.areaTab {
+  flex: 1;
+  /* 44px is the usual minimum comfortable touch target; these are the only
+     controls on the card besides its close button. */
+  min-height: 44px;
+  padding: 10px 8px;
+  border: none;
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.78rem;
+  font-weight: 800;
+  line-height: 1.15;
+  text-align: center;
+  background: #dbe2ee;
+  color: #5a6780;
+}
+
+.areaTabActiveLuce {
+  background: #2f549d;
+  color: #fff;
+}
+
+.areaTabActiveDdp {
+  background: #39a5bd;
+  color: #fff;
+}
+
+/* The one place the difference between the two sources is stated. It used to
+   be said twice, once in each card's footnote block. */
+.areaTabDiffLine {
+  background: #f3f6fb;
+  color: #45536e;
+  border-bottom: 1px solid #dce3ee;
+  padding: 8px 12px;
+  font-size: 0.72rem;
+  line-height: 1.4;
+}
+
+.areaTabDiffLine b {
+  color: #2f549d;
+}
+
+.areaTabDiffLine i {
+  color: #1d7f93;
+  font-style: normal;
+  font-weight: 700;
+}
+
+/* The third source marker. Deliberately NOT one of the two card colours: Census
+   population is reference data, never an incident count, so it should not read
+   as a peer of the LUCE blue / DDP teal above. This slate is the same one the
+   inactive tabs use. */
+.areaTabDiffCensus {
+  color: #5a6780;
+  font-weight: 700;
+}
+
+/* Matches the DDP marker above it, so the attribution reads as belonging to
+   that half of the line. Not white like the DDP card's copy of this link —
+   this line sits on a light background. */
+.areaTabDiffLink {
+  color: #1d7f93;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+/* The "(1.8 per 100k)" annotation beside a DDP count. Smaller and dimmer than
+   the count so the raw figure stays the thing the eye lands on -- the rate is
+   context for it, not a replacement. */
+.perCapitaRate {
+  font-size: 0.85rem;
+  opacity: 0.85;
+  /* Small, because the row already renders a literal space before this span --
+     the two together give the gap, and 6px here would double it. */
+  margin-left: 2px;
+  white-space: nowrap;
+}
+
+/* The "Show per capita" checkbox on the DDP card. Sits on the teal card
+   background, so it inherits the card's white text. */
+.perCapitaToggle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  user-select: none;
+  margin: 2px 0 0;
+}
+
+.perCapitaToggle input {
+  cursor: pointer;
+  /* Browser default is ~13px, which reads oversized next to 0.8rem text. */
+  width: 14px;
+  height: 14px;
+  margin: 0;
+  /* Renders the tick in the DDP teal instead of the browser accent, so the
+     control belongs to this card. */
+  accent-color: #1d7f93;
+}
+
+.areaStatsCard {
+  /* Padding lives here rather than inline on the cards so a media query can
+     reach it. At the narrow mobile width the card is only ~219px wide, and
+     20px each side spent 18% of that on padding. A modest trim; tune here. */
+  padding: 24px 20px;
+  /* Row spacing. Both cards are flex columns, so this single gap is the entire
+     vertical whitespace between their lines — it was 10px (LUCE) / 12px (DDP)
+     inline, where no media query could reach it. Tune here. */
+  gap: 8px;
+}
+
+@media (max-width: 1024px) {
+  .areaStatsCard {
+    padding: 16px 14px;
+    gap: 6px;
+  }
+}
+
+.areaStatsFlush {
+  left: var(--sidebar-w);
+}
+
+.areaStatsCollapsed {
+  left: 1rem;
+}
+
+@media (max-width: 1024px) {
+  .areaStatsFlush,
+  .areaStatsCollapsed {
+    left: 0.75rem;
+    /* Clear the hotline banner, which is fixed at top: 10vh in
+       src/app/page.module.css and about 2.5rem tall (its height is not
+       declared — it falls out of padding + line-height — so this is a
+       deliberate approximation with a gap to absorb small changes). Cards
+       used to start at 5rem and sat squarely behind it. */
+    top: calc(10vh + 3.5rem);
+    /* Leave the legend's column free instead of covering it: the legend is
+       8rem wide at right: 0.4rem, so reserve that plus this card's own
+       0.75rem inset and a gap. ~219px at 375px. max-width stops a tablet
+       from getting one enormous card, and matters more now that this block
+       reaches 1024px — the calc alone would give 868px there, so the 360px
+       cap is what is actually sizing the card across the whole tablet band. */
+    width: calc(100vw - 9.75rem);
+    max-width: 360px;
+    min-width: 0;
+    /* Grow to fit the content instead of capping and scrolling. The cap used
+       to stop above the sidebar bottom sheet, but the internal scroll it
+       relied on was not usable by touch here, so the overflow was simply
+       unreachable — a taller card that shows everything beats a short one
+       that hides part of it.
+
+       There is still a ceiling worth knowing about: the sheet is height: 50vh
+       anchored to the bottom at z-index 2000 against this card's 1000, so any
+       content past 50vh paints behind it. The card is much shorter than it
+       was (no disclosure, no group headings, no subline, 6px row gap), so it
+       fits the band in normal use. */
+    max-height: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .mapSectionRoot {
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    overscroll-behavior: none;
+  }
+
+  .sidebar {
+    width: 100vw;
+    left: 0;
+    top: auto;
+    bottom: 0;
+    height: 50vh;
+    min-height: 120px;
+    max-height: 60vh;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 3000;
+    background: rgb(37, 28, 28, 0);
+    flex-direction: column;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+      left 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateY(0);
+    right: 0;
+  }
+  .sidebarClosed {
+    transform: translateY(100%);
+    left: 0;
+  }
+  .sidebarOpen {
+    transform: translateY(0);
+    left: 0;
+  }
+  .collapseButton {
+    position: absolute;
+    top: -3vh;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30vw;
+    height: 4vh;
+    margin: 0;
+    border-radius: 8px;
+    background: #ffffff !important; /* Always white by default */
+    color: #2f549d;
+    z-index: 100;
+    padding-top: 0px;
+    font-size: 1em;
+    font-weight: 700; /* Added weight */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
+    display: block;
+  }
+  .sidebarInner {
+    flex-direction: column;
+    height: 100%;
+    width: 100vw;
+    position: relative; /* Make this relative for absolute children */
+  }
+  .desktopOnly {
+    display: none;
+  }
+  .mobileOnly {
+    display: inline;
+  }
+  .mapContainer {
+    height: 100%;
+    /* min-height: 200px; */
+    border-radius: 0;
+  }
+}
+
+@media (min-width: 1025px) {
+  .mobileCloseButton {
+    display: none;
+  }
+}
